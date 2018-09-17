@@ -5,8 +5,8 @@ import hashlib
 import uuid
 import os
 import shutil
-import util.timer
-import util.anki_setup
+from util import timer
+from util import anki_setup
 with open(sys.argv[1]) as myFile:
     myFile.readline()
     rd = csv.reader(myFile)
